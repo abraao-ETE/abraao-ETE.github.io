@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+.imagem > img {
+    margin-left: 260px;
+    height: 334px;
+    width: 768px;
+    box-shadow: 1px 1px 4px gray;
+}
+
+.titulo{
+    font-family: roboto;
+    font-weight: 400;
+    margin-left: 425px;
+    text-shadow: 1px 2px 2px lightgrey;
+    
+}
+
+.botao > a > button{
+    background-color: #00a5c1;
+    background-image: linear-gradient(to right,#00a5c1, #013b81);
+    outline: 0;
+    border: 0;
+    padding: 20px;
+    width: 150px;
+    border-radius: 75px;
+    color: white;
+    font-weight: 800;
+    box-shadow: 1px 2px 3px lightgray;
+    margin-left: 555px;
+
+}
+
+.linha{
+    margin-top: 70px;
+    border-bottom: 1px solid gray;
+}
+
+h4{
+    margin-top: 20px;
+}
+
