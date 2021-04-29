@@ -1,0 +1,215 @@
+/*Transição da navegação*/
+
+#navegacao ul li a h1:hover{
+    color: #90caf9;
+    transition: 250ms;
+    border-bottom: 3px solid #90caf9;
+}
+/*Animações*/
+
+@keyframes animação-inicial{
+    from{
+        margin-top: -20px;
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animacao-logo {
+    from{
+        margin-top: -50px;
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes label {
+    from{
+        margin-top: -100px;
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+/*Estiliação da TopBar*/
+
+.top-container{
+    height: 100px;
+    width: 100%;
+    background: #2e2e2e;
+}
+/*Logo*/
+.top-container #logo a img{
+    height: 65px;
+    margin: 15px 20px;
+    float: left;
+    animation: animacao-logo 1200ms;
+}
+/*Navegação*/
+
+#navegacao{
+    width: 780px;
+}
+
+#navegacao ul li{
+    display: inline-block;
+    margin: 33px 25px;
+    animation: animação-inicial 1500ms;
+
+}
+
+#navegacao ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Miracle;
+    font-size: 12px;
+}
+
+/*pre conteudo(Imagem)*/
+
+.pre-content img{
+    height: 555px;
+    width: 100%;
+    filter: grayscale(20%) blur(3px);
+}
+
+.pre-content #label h1{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-family: Miracle;
+    font-size: 80px;
+    width: 720px;
+    margin: 240px;
+    left: 20%;
+    animation: label 1200ms;
+}
+
+/*Título 1*/
+.title1{
+    margin-top: 150px;
+}
+
+.title1 h1{
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: ChunkFive;
+    color: #161616;
+    
+}
+
+/*Conteúdo e colunas*/
+.content{
+    width: 980px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.content #coluna1 #img1{
+    margin: 50px auto;
+    float: left; 
+}
+
+.content #coluna2 #img2{
+    margin: 50px auto;
+    float: right;
+}
+.content #coluna1 #img3{
+    margin: 50px auto;
+    float: left;
+}
+.content #coluna2 #img4{
+    margin: 50px auto;
+    float: right;
+}
+
+
+/*imagemns nas colunas*/
+
+.content img{
+    height: 220px;
+    width: 400px;
+}
+/*Textos das Imagens*/
+
+.content #coluna1 #img1 p, 
+.content #coluna2 #img2 p,
+.content #coluna1 #img3 p,
+.content #coluna2 #img4 p{
+    height: 180px;
+    padding: 15px 0px;
+    color: #2e2e2e;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+/*Botões de Download*/
+
+.content #coluna1 #img1 button, 
+.content #coluna2 #img2 button,
+.content #coluna1 #img3 button,
+.content #coluna2 #img4 button{
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    background: #116cb6;
+    border: 0;
+    border-radius: 6px;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+/*Definição das Fontes*/
+@font-face {
+    font-family: Miracle;
+    src: url(../fonts/Miracle\ Personal\ use.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: ChunkFive;
+    src: url(../fonts/Chunkfive\ Ex.ttf);
+}
+
+/*Marcação da página*/
+
+#home #navegacao ul .home a h1{
+    color: #90caf9;
+}
+
+
+
+/*Rodapé*/
+
+footer{
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 100px;
+    background: #2e2e2e;
+    color: #fff;
+    font-size: 15px;
+    padding: 40px 20px;
+    text-align: right;
+
+}
